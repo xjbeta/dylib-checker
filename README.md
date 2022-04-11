@@ -1,4 +1,4 @@
 # Check dylibs minos
 
 
-![preview](https://imgur.com/KEDCcW6)
+![preview](https://i.imgur.com/KEDCcW6.jpeg)
