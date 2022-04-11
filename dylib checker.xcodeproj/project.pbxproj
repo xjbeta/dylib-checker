@@ -11,6 +11,7 @@
 		01FA2186280403AE008CE7CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FA2185280403AE008CE7CB /* ViewController.swift */; };
 		01FA2188280403B0008CE7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FA2187280403B0008CE7CB /* Assets.xcassets */; };
 		01FA218B280403B0008CE7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FA2189280403B0008CE7CB /* Main.storyboard */; };
+		01FA219428040B05008CE7CB /* SwiftSlash in Frameworks */ = {isa = PBXBuildFile; productRef = 01FA219328040B05008CE7CB /* SwiftSlash */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FA219428040B05008CE7CB /* SwiftSlash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +79,9 @@
 			dependencies = (
 			);
 			name = "dylib checker";
+			packageProductDependencies = (
+				01FA219328040B05008CE7CB /* SwiftSlash */,
+			);
 			productName = "dylib checker";
 			productReference = 01FA2180280403AE008CE7CB /* dylib checker.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 01FA2177280403AE008CE7CB;
+			packageReferences = (
+				01FA219228040B05008CE7CB /* XCRemoteSwiftPackageReference "SwiftSlash" */,
+			);
 			productRefGroup = 01FA2181280403AE008CE7CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -335,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01FA219228040B05008CE7CB /* XCRemoteSwiftPackageReference "SwiftSlash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tannerdsilva/SwiftSlash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01FA219328040B05008CE7CB /* SwiftSlash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01FA219228040B05008CE7CB /* XCRemoteSwiftPackageReference "SwiftSlash" */;
+			productName = SwiftSlash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01FA2178280403AE008CE7CB /* Project object */;
 }
